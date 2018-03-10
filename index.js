@@ -13,6 +13,7 @@ const conn = mysql.createConnection({
   password : ''
 });
 
+app.use(express.static(__dirname + '/public'));
 
 conn.connect(function(){
   console.log("connected to db")
