@@ -2,8 +2,6 @@ var app = angular.module('nodesql',[]);
 
 //Initializing controller
 app.controller('MainCtrl',['$scope','$http',function($scope,$http){
-  	//Setting variables
-    var mainCtrl = this;
 
   	//Angular gets data from DB
   	var dataUrl = "http://localhost:8080/api/sql/requete1"
@@ -12,7 +10,7 @@ app.controller('MainCtrl',['$scope','$http',function($scope,$http){
         console.error(error)
       }
       $scope.clients = success.data;
-      console.log(mainCtrl.clients)
+
   	});
 
 }]);
