@@ -11,7 +11,7 @@ app.controller('MainCtrl',['$scope','$http',function($scope,$http){
       if (error) {
         console.error(error)
       }
-      mainCtrl.clients = success.data;
+      $scope.clients = success.data;
       console.log(mainCtrl.clients)
   	});
 

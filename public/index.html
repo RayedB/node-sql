@@ -9,8 +9,7 @@
     <script src="app.js"></script>
   </head>
   <body ng-app="nodesql" ng-controller="MainCtrl">
-    hello world
-    {{mainCtrl.test}}
-    <p ng-repeat="client in mainCtrl.clients">client</p>
+
+    <p ng-repeat="client in clients">{{client.first_name}}</p>
   </body>
 </html>
